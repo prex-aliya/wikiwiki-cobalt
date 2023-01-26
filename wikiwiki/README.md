@@ -9,14 +9,3 @@ idea.
 Currently lacking.
 
 This uses pico.css
-
-<!--
-
-- TODO: add these topics
-how to use weird protocol firestick
-best anime we recommend
-how to use ntp
-        common mistakes and fixes
-        using the closes server dosent fix it
-        arch + gentoo + other resources?
--->
