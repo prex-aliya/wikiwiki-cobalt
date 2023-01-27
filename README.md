@@ -19,4 +19,5 @@ how to use ntp
         common mistakes and fixes
         using the closes server dosent fix it
         arch + gentoo + other resources?
+Curious Archive yt
 -->
