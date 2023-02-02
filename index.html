@@ -6,11 +6,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
+
   <link rel="icon" href=".img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="media/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+
 
   <link rel="stylesheet" href="css/pico.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="javascript" href="style.css">
+  <link rel="javascript" href="index.js">
 
   <title>WIKI X WIKI</title>
 
@@ -26,9 +31,16 @@
       var ele = document.getElementById('blink');
       ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
     }, blink_speed);
+
+    function toggleTheme() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+      console.log("Toggled Theme");
+    } 
   </script>
 
   <div class="site-wrapper">
+    <button onclick="toggleTheme()">Try it</button>
     <header>
       <div class="site-title">
         <style>
@@ -41,14 +53,13 @@
             font-family: Delicious;
           }
         </style>
-
         <a id="blink">[scroll down]</a>
         <!--https://www.color-hex.com/color-palette/103600-->
         <h1>WIKI<span style="color: #4a9f46">X</span><span style="color: #ca5329">WIKI</span></h1>
       </div>
 
-      <div style="visibility: sho"id="phone-hide" class="grid-container">
-        try and hide this<br></br>
+      <div id="phone-hide" class="grid-container">
+        Hidden When Viewed By Phone<br></br>
       </div>
     </header>
 

@@ -34,16 +34,34 @@
         animation-delay: 0.3s;
 }
 
+[data-theme=dark] {
+        --background-color: #11191f;
+}
+
+
+.dark-mode {
+        background-color: white;
+        color: black;
+}
 
 .site-wrapper {
-        padding: 2rem;
-        font-size: 1rem;
+        min-height:100vh;
+        padding:3vw
 }
 
 #blink {
         --primary: #757575;
 }
+.title-container {
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+}
 .site-title {
+        background-color: #11191f;
+
+        border-radius: 25px;
+
         padding-top: 2rem;
         padding-bottom: 2rem;
         padding-right: 2rem;
@@ -82,7 +100,7 @@
 #phone-hide {
         visibility: hidden;
 }
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 850px) {
         #phone-hide {
                 visibility: visible;
         }
@@ -90,7 +108,7 @@
 
         }
         .site-wrapper {
-                padding: 15%;
+                padding:6vw
         }
 }
 
