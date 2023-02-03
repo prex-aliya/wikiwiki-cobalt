@@ -74,6 +74,8 @@ body {
 
   display: flex;
   gap: 16px;
+
+  font-size: 1.0em;
 }
 .index-split {
   width: 100%;
@@ -85,8 +87,11 @@ body {
 
 
 .site-wrapper {
-        min-height:100vh;
-        padding:3vw
+        /*min-height:100vh;*/
+        padding-top:0vw;
+        padding-bottom:3vw;
+        padding-left:3vw;
+        padding-right:3vw;
 }
 
 #blink {
@@ -99,10 +104,10 @@ body {
 }
 
 .site-title {
-        padding-top: 2rem;
+        white-space: nowrap;
         padding-right: 2rem;
 
-        align: center;
+        align: left;
         height: 3%;
 }
 .site-title:after {
@@ -113,6 +118,13 @@ body {
         width:100%;
         right:10px
 }
+
+.first-title:after {content: '【WIKI'}
+.first-title:hover:after {content: '【 ウィキ'}
+.second-site {content: 'X'}
+.third-title:after {content: 'WIKI】'}
+.third-title:hover:after {content: 'ウィキ 】'}
+
 .site-scrolldown {
         animation:blink-animation .9s infinite;
         -webkit-animation:blink-animation .9s infinite;
