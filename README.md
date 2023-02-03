@@ -1,24 +1,30 @@
-WIKIWIKI
+<pre>
+     ▄▄        ▄                                      ▄▄        ▄                                                                              
+ ▄▄▄▄██▄▄▄▄    ██   ▄                             ▄▄▄▄██▄▄▄▄    ██   ▄                                                                                  
+ █        █ ▄▄▄███▀▀             ▄▄█   ▀▄    ▄▀   █        █ ▄▄▄███▀▀             ▄▄█                                                
+ ▀        █     ██   ▄▄       ▄▄██▀▀     ▀▄▄▀     ▀        █     ██   ▄▄       ▄▄██▀▀                                              
+          █   ▄▄███▀▀▀   ▄▄▄████         ▄▀▀▄              █   ▄▄███▀▀▀   ▄▄▄████                                                          
+       ▄▄█▀  ▀▀  ██      ▀▀▀  ██       ▄▀    ▀▄        ▄▄█▀  ▀▀  ██      ▀▀▀  ██                                                          
+     ▀▀▀▀         ██          ██                     ▀▀▀▀         ██          ██                                                                  
+</pre>
 
-> WARNING: this is currently under development
+
+<h1 align="center" style="font-size:72px">Wiki Wiki</h1>
+<p align="center">
+//////////////////////////////////////////////////////////////<br>
+WARNING: Under Construction<br>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+</p>
+
 
 wikiwiki, <i>name pending</i>, is a wiki about wiki's and other sources of
-knowledge to help anyone get off there feet on any topic; or at least thats the
+knowledge to help anyone get off there feet on any topic; or at least that's the
 idea.
 
 Currently lacking.
 
 This uses pico.css
 
-<pre>
-      ▄▄▄           ▄ 
- ▄▄▄▄▄███▄▄▄▄▄      ██   ▄                      
- ██         ██   ▄▄▄███▀▀                                    
- ▀▀         ██       ██   ▄▄                             
-            ██     ▄▄███▀▀▀                                    
-         ▄▄█▀     ▀▀  ██                                
-       ▀▀▀▀            ██                     
-</pre>
 
 <!--
 
