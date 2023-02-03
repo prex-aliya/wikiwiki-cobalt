@@ -1,3 +1,13 @@
+console.log("     ▄▄        ▄                                      ▄▄        ▄");
+console.log(" ▄▄▄▄██▄▄▄▄    ██   ▄                             ▄▄▄▄██▄▄▄▄    ██   ▄");
+console.log(" █        █ ▄▄▄███▀▀             ▄▄█   ▀▄    ▄▀   █        █ ▄▄▄███▀▀             ▄▄█");
+console.log(" ▀        █     ██   ▄▄       ▄▄██▀▀     ▀▄▄▀     ▀        █     ██   ▄▄       ▄▄██▀▀");
+console.log("          █   ▄▄███▀▀▀   ▄▄▄████         ▄▀▀▄              █   ▄▄███▀▀▀   ▄▄▄████");
+console.log("       ▄▄█▀  ▀▀  ██      ▀▀▀  ██       ▄▀    ▀▄        ▄▄█▀  ▀▀  ██      ▀▀▀  ██");
+console.log("     ▀▀▀▀         ██          ██                     ▀▀▀▀         ██          ██");
+
+
+
 // blink
 var blink_speed = 900; // every 1000 == 1 second, adjust to suit
 var t = setInterval(function () {
