@@ -12,7 +12,6 @@
   <link rel="icon" type="image/png" sizes="96x96" href="media/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
 
-
   <link rel="stylesheet" href="css/pico.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="javascript" href="index.js">
@@ -24,23 +23,10 @@
 
 
 <body>
-  <script>
-    // blink
-    var blink_speed = 900; // every 1000 == 1 second, adjust to suit
-    var t = setInterval(function () {
-      var ele = document.getElementById('blink');
-      ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
-    }, blink_speed);
-
-    function toggleTheme() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-      console.log("Toggled Theme");
-    } 
-  </script>
+  <script src="index.js"></script>
 
   <div class="site-wrapper">
-    <button onclick="toggleTheme()">Try it</button>
+    <button class="dark-button" onclick="toggleTheme()">🌙</button>
     <header>
       <div class="site-title">
         <style>
@@ -55,15 +41,38 @@
         </style>
         <a id="blink">[scroll down]</a>
         <!--https://www.color-hex.com/color-palette/103600-->
-        <h1>WIKI<span style="color: #4a9f46">X</span><span style="color: #ca5329">WIKI</span></h1>
+        <h1><span id="white-text" style="color: white">︱ WIKI</span>
+          <span style="color: #4a9f46"> X</span>
+          <span style="color: #ca5329">WIKI ︱</span></h1>
       </div>
+      <div class="layout">
+        <div>
+          <h2 id="white-text" style="padding: 0px; margin: 0px">Pages</h2>
+          The Animation Genre<br>
+          todo!()<br>
+          todo!()<br>
+          todo!()<br>
+          todo!()<br>
+          todo!()<br>
+          todo!()<br>
+          todo!()<br>
+        </div>
 
-      <div id="phone-hide" class="grid-container">
-        Hidden When Viewed By Phone<br></br>
+        <div>
+          <h2>Journel</h2>
+        </div>
+
+        <div>
+          <h2>Updates</h2>
+        </div>
       </div>
     </header>
 
     <main>
+      <div id="phone-hide" class="grid-container">
+        Hidden When Viewed By Phone<br></br>
+      </div>
+
       <header>
         Macbeth. I have almost forgot the taste of fears;
         The time has been, my senses would have cool'd
@@ -73,61 +82,58 @@
         Direness, familiar to my slaughterous thoughts
         Cannot once start me.
         <br></br>
-        <pre>
+        <p> 
+        [Re-enter SEYTON] 
+        Wherefore was that cry? 
 
+        Seyton. The queen, my lord, is dead. 
 
-          [Re-enter SEYTON]
-          Wherefore was that cry?
+        Macbeth. She should have died hereafter; 
+        There would have been a time for such a word. 2375 
+        To-morrow, and to-morrow, and to-morrow, 
+        Creeps in this petty pace from day to day 
+        To the last syllable of recorded time, 
+        And all our yesterdays have lighted fools 
+        The way to dusty death. Out, out, brief candle! 2380 
+        Life's but a walking shadow, a poor player 
+        That struts and frets his hour upon the stage 
+        And then is heard no more: it is a tale 
+        Told by an idiot, full of sound and fury, 
+        Signifying nothing. 2385 
+        [Enter a Messenger] 
+        Thou comest to use thy tongue; thy story quickly. 
 
-          Seyton. The queen, my lord, is dead.
+        Messenger. Gracious my lord, 
+        I should report that which I say I saw, 
+        But know not how to do it. 2390 
 
-          Macbeth. She should have died hereafter;
-          There would have been a time for such a word. 2375
-          To-morrow, and to-morrow, and to-morrow,
-          Creeps in this petty pace from day to day
-          To the last syllable of recorded time,
-          And all our yesterdays have lighted fools
-          The way to dusty death. Out, out, brief candle! 2380
-          Life's but a walking shadow, a poor player
-          That struts and frets his hour upon the stage
-          And then is heard no more: it is a tale
-          Told by an idiot, full of sound and fury,
-          Signifying nothing. 2385
-          [Enter a Messenger]
-          Thou comest to use thy tongue; thy story quickly.
+        Macbeth. Well, say, sir. 
 
-          Messenger. Gracious my lord,
-          I should report that which I say I saw,
-          But know not how to do it. 2390
+        Messenger. As I did stand my watch upon the hill, 
+        I look'd toward Birnam, and anon, methought, 
+        The wood began to move. 
 
-          Macbeth. Well, say, sir.
+        Macbeth. Liar and slave! 2395 
 
-          Messenger. As I did stand my watch upon the hill,
-          I look'd toward Birnam, and anon, methought,
-          The wood began to move.
+        Messenger. Let me endure your wrath, if't be not so: 
+        Within this three mile may you see it coming; 
+        I say, a moving grove. 
 
-          Macbeth. Liar and slave! 2395
-
-          Messenger. Let me endure your wrath, if't be not so:
-          Within this three mile may you see it coming;
-          I say, a moving grove.
-
-          Macbeth. If thou speak'st false,
-          Upon the next tree shalt thou hang alive, 2400
-          Till famine cling thee: if thy speech be sooth,
-          I care not if thou dost for me as much.
-          I pull in resolution, and begin
-          To doubt the equivocation of the fiend
-          That lies like truth: 'Fear not, till Birnam wood 2405
-          Do come to Dunsinane:' and now a wood
-          Comes toward Dunsinane. Arm, arm, and out!
-          If this which he avouches does appear,
-          There is nor flying hence nor tarrying here.
-          I gin to be aweary of the sun, 2410
-          And wish the estate o' the world were now undone.
-          Ring the alarum-bell! Blow, wind! come, wrack!
-          At least we'll die with harness on our back.
-        </pre>
+        Macbeth. If thou speak'st false, 
+        Upon the next tree shalt thou hang alive, 2400 
+        Till famine cling thee: if thy speech be sooth, 
+        I care not if thou dost for me as much. 
+        I pull in resolution, and begin 
+        To doubt the equivocation of the fiend 
+        That lies like truth: 'Fear not, till Birnam wood 2405 
+        Do come to Dunsinane:' and now a wood 
+        Comes toward Dunsinane. Arm, arm, and out! 
+        If this which he avouches does appear, 
+        There is nor flying hence nor tarrying here. 
+        I gin to be aweary of the sun, 2410 
+        And wish the estate o' the world were now undone. 
+        Ring the alarum-bell! Blow, wind! come, wrack! 
+        At least we'll die with harness on our back.</p>     
       </header>
     </main>
   </div>
