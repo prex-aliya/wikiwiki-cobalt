@@ -73,7 +73,7 @@ body {
   height: 750px;
 
   display: flex;
-  gap: 16px;
+  gap: 2em;
 
   font-size: 1.0em;
 }
@@ -81,7 +81,7 @@ body {
   width: 100%;
 
   display: flex;
-  gap: 16px;
+  gap: 2em;
 }
 
 
@@ -100,12 +100,13 @@ body {
 .title-container {
         padding-right: 2rem;
         padding-top: 2rem;
-        padding-bottom: 2rem;
-}
+        padding-bottom: 2rem; }
 
 .site-title {
         white-space: nowrap;
         padding-right: 2rem;
+
+        font-size: 0.9rem;
 
         align: left;
         height: 3%;
@@ -120,10 +121,16 @@ body {
 }
 
 .first-title:after {content: '【WIKI'}
-.first-title:hover:after {content: '【 ウィキ'}
+.first-title:hover:after {
+        content: '【 ウィキ';
+        text-decoration:none;
+}
 .second-site {content: 'X'}
 .third-title:after {content: 'WIKI】'}
-.third-title:hover:after {content: 'ウィキ 】'}
+.third-title:hover:after {
+        content: 'ウィキ 】';
+        text-decoration:none;
+}
 
 .site-scrolldown {
         animation:blink-animation .9s infinite;
