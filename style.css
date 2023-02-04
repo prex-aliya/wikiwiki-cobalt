@@ -76,6 +76,8 @@ body {
   gap: 2em;
 
   font-size: 1.0em;
+  
+  padding-left: 2vw;
 }
 .index-split {
   width: 100%;
