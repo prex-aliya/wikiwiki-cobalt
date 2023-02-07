@@ -7,6 +7,7 @@
 <br>       ▄▄█▀  ▀▀  ██      ▀▀▀  ██       ▄▀    ▀▄        ▄▄█▀  ▀▀  ██      ▀▀▀  ██
 <br>     ▀▀▀▀         ██          ██                     ▀▀▀▀         ██          ██
 </p>
+<!-- Happy accident -->
 
 
 <h1 align="center" style="font-size:72px">Wiki Wiki</h1>
