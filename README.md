@@ -1,4 +1,4 @@
-<pre>
+<pre align="center">
      ▄▄        ▄                                      ▄▄        ▄
  ▄▄▄▄██▄▄▄▄    ██   ▄                             ▄▄▄▄██▄▄▄▄    ██   ▄
  █        █ ▄▄▄███▀▀             ▄▄█   ▀▄    ▄▀   █        █ ▄▄▄███▀▀             ▄▄█
@@ -27,7 +27,6 @@ This uses pico.css
 
 
 <!--
-
 - TODO: add these topics
 how to use weird protocol firestick
 best anime we recommend
