@@ -9,7 +9,7 @@
 </p>
 <!-- Happy accident -->
 
-<h1 align="center" style="font-size:72px" href="https://prex-aliya.github.io/index.html">Wiki Wiki</h1>
+<h1 align="center" style="font-size:72px"><a href="https://prex-aliya.github.io/index.html">Wiki Wiki</a></h1>
 <p align="center">
 //////////////////////////////////////////////////////////////<br>
 WARNING: Under Construction<br>
