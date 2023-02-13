@@ -1,0 +1,3 @@
+[submodule "public/prex-aliya.github.io"]
+	path = public/prex-aliya.github.io
+	url = git@github.com:prex-aliya/prex-aliya.github.io.git
