@@ -23,8 +23,7 @@ idea.
 
 Currently lacking.
 
-This uses pico.css
-
+NOW WITH HUGO
 
 <!--
 - TODO: add these topics
