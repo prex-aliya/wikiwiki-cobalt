@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="{{ .Site.Language }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ "/media/favicon/favicon-16x16.png" | relURL}}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ "/media/favicon/favicon-32x32.png" | relURL}}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ "/media/favicon/favicon-96x96.png" | relURL}}">
+
+    <link rel="stylesheet" href="{{ "/css/pico.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "/style.css" | relURL }}">
+    <link rel="javascript" href="{{ "/index.js" | relURL }}">
+
+    <title>WIKI X WIKI</title>
+
+    <div id="fadein"></div>
+  </head>
+
+
+  <body>
+    <script>
+      function toggleTheme() {
+        colorchange("white-text");
+
+        colorchange("white-head0");
+        colorchange("white-head1");
+        colorchange("white-head2");
+        colorchange("white-head3");
+        colorchange("white-head4");
+
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        console.log("Toggled Theme");
+      } 
+
+      function colorchange(id) {
+        var background = document.getElementById(id).style.color;
+        if (background == "rgb(0, 0, 0)") {
+          document.getElementById(id).style.color = "#ffffff";
+        } else {
+          document.getElementById(id).style.color = "rgb(0,0,0)";
+        }
+      }
+    </script>
+
+    {{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
+    <main class="site-wrapper">
+      <header>
+        <button class="dark-button" onclick="toggleTheme()">🌙</button>
+        <div class="site-title">
+          <a id="blink">[scroll down]</a>
+          <!--https://www.color-hex.com/color-palette/103600-->
+          <h1>
+            <a href="x.com" class="first-title" id="white-text" style="color: white"></a>
+            <a id="title" href="/index.html" class="second-title" style="color: #4a9f46;">X</a>
+            <a id="title" href="x.com" class="third-title" style="color: #ca5329;"></a>
+          </h1>
+        </div>
+
+        <div id="phone-hide" class="index">
+          <div> <i>
+              <h2 id="white-head0" style="padding: 0px; margin: 0px">Pages</h2>
+              <li><a href="/journal/">Journal</a></li>
+          </div>
+
+          <div> <i>
+              <h2 id="white-head0" style="padding: 0px; margin: 0px">Links</h2>
+              {{ range .Pages }}
+              <li>
+                <a href="{{.Permalink}}">{{.Title}}</a>
+              </li>
+              {{ end }}
+          </div>
+
+	  <!--
+          <div>
+            <div class="index-split">
+              <div> 
+                <h2 id="white-head1" style="padding: 0px; margin: 0px">
+                  Journal</h2>
+
+                {{ range .Pages }}
+                <li>
+                  <a href="{{.Permalink}}">{{.Date.Format "02-01-2006"}}|
+                    todo()! </a>
+                </li>
+                {{ end }}
+
+
+              </div>
+              <div> 
+                <h2 id="white-head2" style="padding: 0px; margin: 0px">
+                  Travel</h2>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                more...
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="index-split">
+              <div> 
+                <h2 id="white-head3" style="padding: 0px; margin: 0px">
+                  Make</h2>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                more...
+              </div>
+
+              <div> 
+                <h2 id="white-head4" style="padding: 0px; margin: 0px">
+                  Updates</h2>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                todo!()<br>
+                more...
+              </div>
+            </div>
+          </div>
+	  -->
+        </div>
+      </header>
+
+      {{ block "main" . }}
+      {{ .Content }}
+      {{ end }}
+    </main>
+
+
+    {{ block "footer" . }}
+    <footer class="site-wrapper">
+
+      <!-- Show Rss Feed At Bottom-->
+      {{- if .Param "showrss" }}
+      <center>
+        {{ if .Param "taglist" }}{{ partial "taglist.html" . }}{{ end -}}
+        <br><br>
+        <a href="/index.xml">
+          <img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates.">
+        </a>
+      </center>
+      {{ end }}
+
+    </footer>
+    {{ end }}
+  </body>
+</html>
+
+<!-- vim: tabstop=2     -->
+<!-- vim: shiftwidth=2  -->
