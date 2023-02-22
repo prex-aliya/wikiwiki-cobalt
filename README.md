@@ -1,4 +1,4 @@
-<pre align="center">
+<!--<pre align="center">
      ▄▄        ▄                                      ▄▄        ▄
  ▄▄▄▄██▄▄▄▄    ██   ▄                             ▄▄▄▄██▄▄▄▄    ██   ▄
  █        █ ▄▄▄███▀▀             ▄▄█   ▀▄    ▄▀   █        █ ▄▄▄███▀▀             ▄▄█
@@ -6,8 +6,7 @@
           █   ▄▄███▀▀▀   ▄▄▄████         ▄▀▀▄              █   ▄▄███▀▀▀   ▄▄▄████
        ▄▄█▀  ▀▀  ██      ▀▀▀  ██       ▄▀    ▀▄        ▄▄█▀  ▀▀  ██      ▀▀▀  ██
      ▀▀▀▀         ██          ██                     ▀▀▀▀         ██          ██
-</pre>
-<!-- Happy accident -->
+</pre>-->
 
 <h1 align="center" style="font-size:72px"><a href="https://prex-aliya.github.io/index.html">Wiki Wiki</a></h1>
 <p align="center">
@@ -33,5 +32,5 @@ how to use ntp
         common mistakes and fixes
         using the closes server dosent fix it
         arch + gentoo + other resources?
-Curious Archive yt
+Youtube Creators
 -->
