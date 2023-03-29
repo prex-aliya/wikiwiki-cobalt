@@ -24,6 +24,8 @@ Currently lacking.
 
 NOW WITH HUGO
 
+Full experience got to wiki tab.
+
 <!--
 - TODO: add these topics
 how to use weird protocol firestick
