@@ -16,23 +16,21 @@ WARNING: Under Construction<br>
 </p>
 
 
-wikiwiki, <i>name pending</i>, is a wiki about wiki's and other sources of
-knowledge to help anyone get off there feet on any topic; or at least that's the
-idea.
+WIKI X WIKI, is a website where you can learn how to learn, and find where you
+can learn, it will be a database of places to learn, and get off your feet.
+Hopefully in the future, help become an expert in a specific field, or fields.
 
-Currently lacking.
+My goal for the back end of this website will be html with css, but without any
+JavaScript, or cookies, or any client side scripting, and try to be compatible
+with some heavy privacy settings. Dark mode is default, if enough want light
+mode then, I consider adding such, as a custom secondary website, but that would
+be hard to maintain as current.
 
-NOW WITH HUGO
 
-***Full experience got to wiki tab.***
 
-<!--
-- TODO: add these topics
-how to use weird protocol firestick
-best anime we recommend
-how to use ntp
-        common mistakes and fixes
-        using the closes server dosent fix it
-        arch + gentoo + other resources?
-Youtube Creators
--->
+NOW WITH [COBALT](https://cobalt-org.github.io/)!
+
+
+Currently lacking in articles
+
+<!-- -->

@@ -1,5 +1,0 @@
-baseURL = "/"
-languageCode = "en-us"
-title = "Based Hugo Site"
-
-theme = "mine"
