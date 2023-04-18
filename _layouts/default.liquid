@@ -1,13 +1,151 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-    </head>
-    <body>
-    <div>
-      <h2>{{ page.title }}</h2>
-      {{ page.content }}
-    </div>
-  </body>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8" />
+                <title>WIKI X WIKI</title>
+
+                <meta name="viewport" content="width=device-width,initial-scale=1" />
+                <meta name="description" content="No one reads this anyway right?" />
+                <link rel="icon" href="favicon.ico">
+
+                <style>
+/* STYLE */
+* {
+        color: #fff;
+        //background: #0D1117;
+        background: #161B22;
+}
+
+
+.grid {
+	border-collapse: collapse;
+}
+.navbar, .row {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+}
+.row { 
+        color: #0AF;
+        margin: auto;
+        padding: 0.5em;
+        border-style: solid none solid none;
+}
+
+.bar, .col { 
+        flex-grow: 1;
+        text-align: justify;
+
+        border-style: none solid none solid;
+        border-color: #F55;
+        border-width: 0.1em;
+}
+.col { 
+        padding: 0 0.5em 0 0.5em;
+}
+.bar {
+        padding: 0 0 0 0;
+}
+
+.navbar:hover { color: #0AF; }
+
+
+body {
+	margin: auto;
+	padding: 1em;
+	max-width: 64em;
+	font-family: "courier new", monospace;
+	//color: #fb5;
+        background: #0D1117;
+	//background: #fff;
+	word-wrap: break-word;
+}
+
+.main { 
+        margin: auto;
+        padding: 1em;
+        text-align: justify;
+        border-style: double;
+}
+
+/* THEGOODS */
+#lil-boi { 
+        text-decoration:none;
+}
+
+.first-boi:after {
+        content: 'wiki_';
+        color: #ffffff;
+} .first-boi:hover:after { content: 'ウィキ'; }
+
+.second-boi:after {
+        content: 'x';
+        color: #4a9f46;
+} .second-boi:hover:after { content: 'X'; }
+
+.third-boi:after {
+        content: '_wiki';
+        color: #ca5329;
+} .third-boi:hover:after { content: 'ウィキ'; }
+
+
+.fancyboi { //color: #fb5; }
+.fancyboi::before { content: "$ "; }
+@media (prefers-reduced-motion: no-preference) {
+	@keyframes flash {
+		50% { opacity: 0; }
+	}
+	@keyframes reveal {
+		from { width: 2em; } /* Width of ::before */
+		  to { width: 100%; }
+	}
+	.fancyboi {
+		overflow: hidden;
+		white-space: nowrap;
+		animation: reveal 2s linear;
+		text-overflow: "█";
+	}
+        .end::after{
+                content: "█";
+                animation: flash 0.5s step-end infinite;
+        }
+}
+@media not (prefers-reduced-motion: no-preference) {
+        .end::after{
+                content: "█";
+        }
+}
+/* SDOOGEHT */
+                </style>
+        </head>
+
+        <body class="body">
+                <h1 style="text-decoration:none;" class="fancyboi" id="lil-boi">man 
+                        <a href="" id="lil-boi" class="first-boi"></a><a href="" id="lil-boi" class="second-boi"></a><a href="" id="lil-boi" class="third-boi"></a>
+                </h1> <!-- top bar -->
+
+                
+                <div class="grid">
+                        <div class="row" align="center">
+                                <div class="bar"><center><a href="">todo!()</a></center></div>
+                                <div class="bar"><center><a href="">todo!()</a></center></div>
+                                <div class="bar"><center><a href="/">home</a></center></div>
+                                <div class="bar"><center><a href="">todo!()</a></center></div>
+                                <div class="bar"><center><a href="">todo!()</a></center></div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                                <div class="col"> 
+                                        <div>
+                                                <h2>{{ page.title }}</h2>
+                                                {{ page.content }}
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="end"><br />$ </div>
+        </body>
 </html>

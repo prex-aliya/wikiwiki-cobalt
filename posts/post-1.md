@@ -2,7 +2,7 @@
 layout: default.liquid
 
 title: First Post
-is_draft: true
+is_draft: false
 ---
 
 # This is our first Post!
