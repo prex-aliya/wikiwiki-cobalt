@@ -20,7 +20,7 @@
 .grid {
 	border-collapse: collapse;
 }
-.navbar, .row {
+.row {
         display: flex;
         flex-wrap: nowrap;
         flex-grow: 1;
@@ -34,38 +34,32 @@
 
 .bar, .col { 
         flex-grow: 1;
-        text-align: justify;
 
         border-style: none solid none solid;
         border-color: #F55;
         border-width: 0.1em;
 }
 .col { 
+        text-align: justify;
         padding: 0 0.5em 0 0.5em;
 }
 .bar {
+        text-align: center;
         padding: 0 0 0 0;
 }
 
-.navbar:hover { color: #0AF; }
-
-
+html {
+        //background-image: url("https://picsum.photos/536/354");
+        // TODO: get a real image
+}
 body {
 	margin: auto;
 	padding: 1em;
-	max-width: 64em;
+	max-width: 96em;
 	font-family: "courier new", monospace;
-	//color: #fb5;
         background: #0D1117;
-	//background: #fff;
-	word-wrap: break-word;
-}
-
-.main { 
-        margin: auto;
-        padding: 1em;
-        text-align: justify;
-        border-style: double;
+        word-wrap: break-word;
+        height: 100%;
 }
 
 /* THEGOODS */
@@ -125,7 +119,7 @@ h4::after { content: "』"; }
                 </style>
         </head>
 
-        <body class="body">
+        <body>
                 <h1 style="text-decoration:none;" class="fancyboi" id="lil-boi">man 
                         <a href="" id="lil-boi" class="first-boi"></a><a href="" id="lil-boi" class="second-boi"></a><a href="" id="lil-boi" class="third-boi"></a>
                 </h1> <!-- top bar -->
@@ -133,11 +127,11 @@ h4::after { content: "』"; }
                 
                 <div class="grid">
                         <div class="row" align="center">
-                                <div class="bar"><center><a href="../">&larr;back</a></center></div>
-                                <div class="bar"><center><a href="">todo!()</a></center></div>
-                                <div class="bar"><center><a href="/">home</a></center></div>
-                                <div class="bar"><center><a href="">todo!()</a></center></div>
-                                <div class="bar"><center><a href="">todo!()</a></center></div>
+                                <div class="bar"><a href="">&larr;back</a></div>
+                                <div class="bar"><a href="">todo!()</a></div>
+                                <div class="bar"><a href="/">home</a></div>
+                                <div class="bar"><a href="">todo!()</a></div>
+                                <div class="bar"><a href="">todo!()</a></div>
                         </div>
 
                         <br />
